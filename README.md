@@ -4,7 +4,7 @@
 
 #### Верстка сайта происходила согласно макета psd с использованием bootstrap.
 ### Проект доступен по ссылке:
-- https://oalbukova.github.io/bootstrapSpaceX/
+- https://oalbukova.github.io/SpaceXfeedback/
 
 ### Технологии использованные при верстке проекта:
 
