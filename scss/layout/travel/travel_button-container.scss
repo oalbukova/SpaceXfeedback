@@ -1,0 +1,15 @@
+.travel__button-container {
+  @include flex();
+  @include align-items-flex-start();
+  position: $relative;
+  z-index: 2;
+  margin-top: 23vh;
+  width: 642px;
+  @include media-max(xxl) {
+    width: 100%;
+  }
+  @include media-max(lg) {
+    @include justify-content-center();
+    margin-top: 5vh;
+  }
+}

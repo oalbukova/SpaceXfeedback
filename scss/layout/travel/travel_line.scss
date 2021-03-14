@@ -1,0 +1,38 @@
+.travel-line {
+  @include flex();
+  @include media-max(xxl) {
+    display: $none;
+  }
+  @include media-max-height(sm) {
+    display: $none;
+  }
+}
+
+.travel-line__first {
+  width: 70.65px;
+  @include background-image-travel-line();
+  @include transform-rotate();
+  @include transform-origin-b-r();
+  height: 1px;
+  margin-top: 57px;
+}
+
+.travel-line__round {
+  @include transform-translateY();
+  border-color: $color-white;
+  border-style: solid;
+  position: $absolute;
+  top: 100%;
+  left: 640.65px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border-width: 1px;
+}
+
+.travel-line__second {
+  @include travel-line__second-color();
+  margin-top: 57px;
+  height: 1px;
+  width: 386px;
+}

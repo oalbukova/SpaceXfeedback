@@ -1,0 +1,38 @@
+.card {
+  background: -webkit-linear-gradient(315deg, transparent 100%, $color-card-background-gradient);
+  background: linear-gradient(135deg, transparent 100%, $color-card-background-gradient);
+  color: $color-card;
+  line-height: 50px;
+  border: $none;
+  @include media-max(sm) {
+    min-height: 185px;
+  }
+}
+
+.card_one {
+  background: -webkit-linear-gradient(315deg, transparent 50%, $color-card-background);
+  background: linear-gradient(135deg, transparent 50%, $color-card-background);
+  border-right: $border-transparent;
+  border-bottom: $border-transparent;
+}
+
+.card_two {
+  background: -webkit-linear-gradient(225deg, transparent 50%, $color-card-gradient);
+  background: linear-gradient(-135deg, transparent 50%, $color-card-gradient);
+  border-left: $border-transparent;
+  border-bottom: $border-transparent;
+}
+
+.card_three {
+  background: -webkit-linear-gradient(45deg, transparent 50%, $color-card-gradient);
+  background: linear-gradient(45deg, transparent 50%, $color-card-gradient);
+  border-right: $border-transparent;
+  border-top: $border-transparent;
+}
+
+.card_four {
+  background: -webkit-linear-gradient(135deg, transparent 50%, $color-card-gradient);
+  background: linear-gradient(-45deg, transparent 50%, $color-card-gradient);
+  border-left: $border-transparent;
+  border-top: $border-transparent;
+}

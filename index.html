@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <meta content="Ольга Альбукова" name="author" />
+  <meta content="тестовое задание Ольги Альбуковой для SAGIROV.com" name="description" />
+  <link href="images/favicon.ico" rel="icon" sizes="48x48" type="image/png" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="scss/template.css" rel="stylesheet" />
+  <title lang="en">SpaceX</title>
+</head>
+
+<body class="body">
+  <div class="page">
+    <!-- header-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img alt="logo" class="logo" loading="lazy" src="./images/logo1.png" />
+        </a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+          data-target="#navbarNav" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)">Главная<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Технология</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">График полетов</a>
+            </li>
+            <li class="nav-item">
+              <a aria-disabled="true" class="nav-link" href="javascript:void(0)">Гарантии</a>
+            </li>
+            <li class="nav-item">
+              <a aria-disabled="true" class="nav-link" href="javascript:void(0)">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a aria-disabled="true" class="nav-link" href="javascript:void(0)">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <!--travel-->
+          <section class="travel col-lg-6">
+            <h1 class="travel__title">Путешествие</h1>
+            <span class="travel__title-span">на красную планету</span>
+            <div class="travel__button-container">
+              <button class="btn btn-outline-dark travel__btn btn-sm" type="button">
+                Начать путешествие
+              </button>
+              <div class="travel-line">
+                <div class="travel-line__first"></div>
+                <div class="travel-line__second"></div>
+                <span class="travel-line__round"></span>
+              </div>
+            </div>
+          </section>
+          <!--info-->
+          <section class="info col-lg-5 ml-auto">
+            <div class="row row-cols-1 row-cols-md-2 info-container">
+              <div class="col">
+                <div class="card text-center h-100 card_one">
+                  <div class="card-body">
+                    <p class="card-text">мы</p>
+                    <h5 class="card-title">1</h5>
+                    <p class="card-text">на рынке</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center h-100 card_two">
+                  <div class="card-body">
+                    <p class="card-text">гарантируем</p>
+                    <h5 class="card-title">50%</h5>
+                    <p class="card-text">безопасность</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center h-100 card_three">
+                  <div class="card-body">
+                    <p class="card-text">календарик за</p>
+                    <h5 class="card-title">
+                      2001<span class="card-text card-text_medium">г.</span>
+                    </h5>
+                    <p class="card-text">в подарок</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center h-100 card_four">
+                  <div class="card-body">
+                    <p class="card-text">путешествие</p>
+                    <h5 class="card-title">597</h5>
+                    <p class="card-text">дней</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <img alt="Марс" class="main__img" src="images/mars.png" />
+    </main>
+
+    <!--form-->
+    <section class="overlay">
+      <div class="popup">
+        <button class="button-close" id="form-close" type="reset" aria-label="Закрыть"></button>
+        <h1 class="form__title">Форма обратной связи</h1>
+        <div class="form__wrapper">
+          <form id="feedback-form" action="process/process.php" enctype="multipart/form-data" novalidate>
+            <div class="form-row">
+              <!-- Имя пользователя -->
+              <div class="form-group">
+                <label for="name" class="control-label">Имя</label>
+                <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2"
+                  maxlength="30" required="required" />
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <!-- Email пользователя -->
+              <div class="form-group">
+                <label for="email" class="control-label">Email-адрес</label>
+                <input id="email" type="email" name="email" required="required" class="form-control" value=""
+                  placeholder="Email-адрес" />
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+
+            <!-- Телефон пользователя -->
+            <div class="form-group">
+              <label for="phone" class="control-label">Телефон</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">+7</div>
+                </div>
+                <input id="phone" type="tel" name="phone" class="form-control" value="(___)___-__-__"
+                  pattern="^\(?[0-9]{3}\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" />
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            <!-- Сообщение пользователя -->
+            <div class="form-group">
+              <label for="message" class="control-label">Сообщение (не менее 20 символов)</label>
+              <textarea id="message" name="message" class="form-control" rows="3"
+                placeholder="Сообщение (не менее 20 символов)" minlength="20" maxlength="500"
+                required="required"></textarea>
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <!-- Файлы, для прикрепления к форме -->
+            <div class="form-group form-attachments" data-count="5">
+              <div class="form-attachments__wrapper">
+                <input type="file" name="attachment[]" multiple />
+                <div class="form-attachments__items">
+                  <div class="form-attachments__description">
+                    <div>
+                      Можно добавить до 5 файлов с разрешением jpg, jpeg, bmp,
+                      gif, svg, png, txt, doc и размером до 512 Кбайт.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Капча -->
+            <div class="form-group form-captcha">
+              <img class="form-captcha__image" src="./captcha/captcha.php" data-src="./captcha/captcha.php" width="132"
+                height="46" alt="Капча" />
+              <div class="form-captcha__refresh">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                  <path fill="currentColor"
+                    d="M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z">
+                  </path>
+                </svg>
+              </div>
+              <div class="form-group form-captcha__input">
+                <label for="captcha" class="control-label d-none">Код, показанный на изображении</label>
+                <input type="text" name="captcha" maxlength="6" required="required" id="captcha"
+                  class="form-control captcha" placeholder="******" autocomplete="off" value="" />
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+
+            <!-- Пользовательское соглашение -->
+            <div class="form-group form-agreement">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="agree" class="custom-control-input" id="customCheck" />
+                <label class="custom-control-label" for="customCheck">Нажимая кнопку, я принимаю условия
+                  <a class="agreement-link" href="#">Пользовательского соглашения</a>
+                  и даю своё согласие на обработку моих персональных данных, в
+                  соответствии с Федеральным законом от 27.07.2006 года
+                  №152-ФЗ «О персональных данных».</label>
+              </div>
+            </div>
+
+            <!-- Сообщение при ошибке -->
+            <div class="form-error d-none">
+              Исправьте данные и отправьте форму ещё раз.
+            </div>
+
+            <!-- Индикация отправки данных формы на сервер -->
+            <div class="progress d-none">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                style="width: 0"></div>
+            </div>
+
+            <!-- Кнопка для отправки формы на сервер -->
+            <div class="form-submit">
+              <button type="submit" disabled>Отправить сообщение</button>
+            </div>
+          </form>
+
+          <!-- Сообщение об успешной отправки формы -->
+          <div class="form-result-success d-none">
+            <div>
+              Форма успешно отправлена. Нажмите на
+              <a href="#" data-target="#feedback-form">ссылку</a>, чтобы
+              отправить ещё одно сообщение.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--form-->
+  </div>
+  <!--footer-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__content">&copy; 2021 Olga Albukova</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img alt="Правильный CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            style="border: 0; width: 88px; height: 31px" />
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./js/process-forms.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    //после загрузки DOM
+    (function () {
+      var form1 = new ProcessForm();
+      form1.init();
+      /*
+      Параметры указываются в виде:
+      {
+      ключ: значение;
+      ключ: значение;
+      ...
+      }
+      Основные параметры
+      selector - селектор формы (по умолчанию '#feedback-form')
+      attachmentsMaxFileSize - максимальный размер файла в Кбайтах (по умолчанию 512)
+      attachmentsFileExt - допустимые расширения файлов для загрузки 
+      isUseDefaultSuccessMessage - отображать дефолтное сообщение после отправки
+      */
+    })();
+  </script>
+  <script src="./js/maskedinput.js"></script>
+</body>
+
+</html>

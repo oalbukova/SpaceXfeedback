@@ -1,0 +1,22 @@
+.nav-link,
+.navbar-brand {
+  color: $color-white;
+  cursor: $pointer;
+}
+
+.nav-link {
+  text-align: $center;
+  padding-bottom: 10px;
+  margin-left: 1em !important;
+  &:hover {
+    color: #b1b1b1;
+    border-bottom: $border1px $border-header;
+  }
+  @include media-max(xl) {
+    font-size: 0.8em;
+  }
+  @include media-max(lg) {
+    font-weight: $font-weight-700;
+    font-size: 1.2em;
+  }
+}

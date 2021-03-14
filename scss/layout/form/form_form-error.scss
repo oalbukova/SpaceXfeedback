@@ -1,0 +1,14 @@
+/*-----Стили для для сообщения об ошибках(START)-----*/
+.form-error {
+  position: $relative;
+  padding: 8px 16px 9.6px;
+  padding: 0.5rem 1rem 0.6rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  color: $color-form-invalid;
+  background-color: $color-form-invalid;
+  border: $border1px $color-form-invalid;
+}
+
+/*-----Стили для для сообщения об ошибках(END)-----*/

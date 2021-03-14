@@ -1,0 +1,129 @@
+/*-----Стили для секции, с помощью которой можно добавить к форме файлы(START)-----*/
+
+.form-attachments__wrapper {
+  position: $relative;
+  background: $color-white;
+  border: 3px dashed #ccc;
+  border-radius: 5px;
+  min-height: 50px;
+  @include flex();
+  @include align-items-center();
+  @include justify-content-center();
+  padding: 4px;
+}
+
+.form-attachments__wrapper input {
+  position: $absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  outline: $none;
+  cursor: $pointer;
+  display: $block;
+}
+
+.form-attachments__description {
+  width: 100%;
+  text-align: $center;
+  @include flex();
+  @include column();
+  @include align-items-center();
+  padding: 0 10px;
+  > :last-child {
+    color: #6c757d;
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+
+.form-attachments__items {
+  @include flex();
+  @include flex-wrap-wrap();
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.form-attachments__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  overflow: $hidden;
+  padding: 4px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.form-attachments__item-wrapper {
+  border: $border1px #e0e0e0;
+  background: #f5f5f5;
+  padding: 26px 4px;
+  border-radius: 4px;
+  position: $relative;
+  min-height: 100%;
+  @include flex();
+  @include column();
+  @include align-items-center();
+  @include justify-content-center();
+}
+
+.form-attachments__item-image {
+  display: $block;
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-left: $auto;
+  margin-right: auto;
+}
+
+.form-attachments__item-name {
+  margin-top: auto;
+  max-width: 100%;
+  overflow: $hidden;
+  word-wrap: break-word;
+}
+
+.form-attachments__item-size {
+  position: $absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px 6px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.form-attachments__item-link {
+  @include opacity-6();
+  position: $absolute;
+  top: 0;
+  right: 0;
+  padding: 0 6px 8px;
+  padding: 0 0.375rem 0.5rem;
+  color: $inherit;
+  cursor: $pointer;
+  float: right;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: $font-weight-700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 $color-white;
+}
+
+.form-attachments__item-wrapper {
+  .form-attachments__item.is-valid & {
+    border-color: $color-form-success;
+    background-color: #f8fcf9;
+  }
+  .form-attachments__item.is-invalid & {
+    border-color: $color-form-invalid;
+    background-color: #fefbfb;
+  }
+}
+
+/*-----Стили для секции, с помощью которой можно добавить к форме файлы(END)-----*/

@@ -1,0 +1,13 @@
+.card-text {
+  cursor: $default;
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 18px;
+}
+
+.card-text_medium {
+  font-weight: $font-weight-700;
+  font-size: 20px;
+}

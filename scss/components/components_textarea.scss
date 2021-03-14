@@ -1,0 +1,10 @@
+textarea {
+  overflow: $auto;
+  resize: $vertical;
+}
+
+textarea.form-control {
+  overflow: $auto;
+  resize: $vertical;
+  height: $auto;
+}

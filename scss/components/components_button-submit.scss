@@ -1,0 +1,56 @@
+/*-----Стили для кнопки submit(START)-----*/
+button[type="submit"] {
+  display: $inline-block;
+  font-weight: $font-weight-400;
+  color: $color-white;
+  text-align: $center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $color-orange;
+  border: $border1px $color-orange;
+  padding: 6px 12px 6px 32px;
+  padding: 0.375rem 0.75rem 0.375rem 2rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  position: $relative;
+  &:before {
+    @include transform-translateY();
+    content: "";
+    position: $absolute;
+    width: 16px;
+    width: 1rem;
+    height: 16px;
+    height: 1rem;
+    left: 8px;
+    left: 0.5rem;
+    top: 50%;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.333 512'%3E%3Cpath fill='%23fff' d='M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z'/%3E%3C/svg%3E")
+      transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  &:hover {
+    cursor: $pointer;
+    color: $color-white;
+    background-color: $color-btn-submit-hover;
+    border-color: $border-btn-submit-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $color-btn-submit-focus;
+  }
+
+  &:disabled {
+    @include opacity-6();
+  }
+}
+/*-----Стили для кнопки submit(END)-----*/

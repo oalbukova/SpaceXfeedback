@@ -1,0 +1,145 @@
+@mixin background-image-travel-line() {
+  background-image: -webkit-linear-gradient(
+    left,
+    $color-background-image-travel-line 0,
+    $gradient-background-image-travel-line
+  );
+  background-image: linear-gradient(
+    90deg,
+    $color-background-image-travel-line 0,
+    $gradient-background-image-travel-line
+  );
+  -webkit-transform: rotate(30deg);
+}
+
+@mixin color-title() {
+  background: -webkit-linear-gradient(right, $color-orange 30%, $color-white 90%, $color-white 100%);
+  background: linear-gradient(to left, $color-orange 30%, $color-white 90%, $color-white 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin travel__btn-color() {
+  -o-border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-light,
+    $border-travel__btn-dark,
+    $border-travel__btn-light
+  );
+  border-image: -webkit-linear-gradient(
+    45deg,
+    $border-travel__btn-light,
+    $border-travel__btn-dark,
+    $border-travel__btn-light
+  );
+  border-image: linear-gradient(45deg, $border-travel__btn-light, $border-travel__btn-dark, $border-travel__btn-light);
+  border-image-slice: 1;
+}
+
+@mixin travel__btn-color-hover() {
+  box-shadow: $box-shadow;
+  -o-border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image: -webkit-linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image-slice: 1;
+}
+
+@mixin background-image-travel-line() {
+  background-image: -webkit-linear-gradient(
+    left,
+    $color-background-image-travel-line 0,
+    $gradient-background-image-travel-line
+  );
+  background-image: linear-gradient(
+    90deg,
+    $color-background-image-travel-line 0,
+    $gradient-background-image-travel-line
+  );
+  -webkit-transform: rotate(30deg);
+}
+
+@mixin color-title() {
+  background: -webkit-linear-gradient(right, $color-orange 30%, $color-white 90%, $color-white 100%);
+  background: linear-gradient(to left, $color-orange 30%, $color-white 90%, $color-white 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin travel__btn-color() {
+  -o-border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-light,
+    $border-travel__btn-dark,
+    $border-travel__btn-light
+  );
+  border-image: -webkit-linear-gradient(
+    45deg,
+    $border-travel__btn-light,
+    $border-travel__btn-dark,
+    $border-travel__btn-light
+  );
+  border-image: linear-gradient(45deg, $border-travel__btn-light, $border-travel__btn-dark, $border-travel__btn-light);
+  border-image-slice: 1;
+}
+
+@mixin travel__btn-color-hover() {
+  box-shadow: $box-shadow;
+  -o-border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image: -webkit-linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image: linear-gradient(
+    45deg,
+    $border-travel__btn-hover-light,
+    $border-travel__btn-hover-dark,
+    $border-travel__btn-hover-light
+  );
+  border-image-slice: 1;
+}
+
+@mixin travel-line__second-color() {
+  background-image: -webkit-linear-gradient(left, $gradient-background-image-travel-line 0, $color-white);
+  background-image: linear-gradient(90deg, $gradient-background-image-travel-line 0, $color-white);
+}
+
+@mixin form-border-color() {
+  -o-border-image: linear-gradient(45deg, $color-orange 30%, $color-white 90%, $color-white 100%);
+  border-image: -webkit-linear-gradient(45deg, $color-orange 30%, $color-white 90%, $color-white 100%);
+  border-image: linear-gradient(45deg, $color-orange 30%, $color-white 90%, $color-white 100%);
+  border-image-slice: 1;
+}
+/*
+@mixin cards($deg, $color, $deg2, $position, position2) {
+  background: -webkit-linear-gradient($deg, transparent 50%, $color);
+  background: linear-gradient($deg2, transparent 50%, $color);
+  (border-$position):$border-transparent ;
+  (border-$position2):$border-transparent ;
+}
+*/
+@mixin opacity-6() {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}

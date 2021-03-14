@@ -1,0 +1,8 @@
+.info {
+  z-index: 2;
+  padding-left: 30px;
+  @include media-max(lg) {
+    padding: 0;
+    margin: 60px $auto;
+  }
+}

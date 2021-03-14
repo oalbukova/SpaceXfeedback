@@ -1,0 +1,8 @@
+.info-container {
+  margin-left: $auto;
+  max-width: 370px;
+  @include media-max(lg) {
+    margin: $auto;
+    width: 80%;
+  }
+}

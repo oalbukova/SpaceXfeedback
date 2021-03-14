@@ -1,0 +1,14 @@
+.page {
+  @include flex-auto();
+}
+
+@include media-min(xl) {
+  .container {
+    max-width: 1315px;
+  }
+}
+
+.col {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}

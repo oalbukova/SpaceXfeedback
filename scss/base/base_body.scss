@@ -1,0 +1,17 @@
+.body {
+  @include text-rendering();
+  @include background();
+  @include flex();
+  @include column();
+  font-family: $font-family-museo-sans;
+  width: 100%;
+  margin: $auto;
+  color: $color-white;
+  max-width: 1920px;
+  min-width: 320px;
+  font-style: $normal;
+  background-color: $color-background;
+  background-image: url(../images/background.jpg);
+  background-position: 50% 0;
+  min-height: 100vh;
+}

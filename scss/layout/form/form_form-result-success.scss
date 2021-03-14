@@ -1,0 +1,37 @@
+/*-----Стили для сообщения об успешной отправке(START)-----*/
+.form-result-success {
+  position: $absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  @include flex();
+  text-align: $center;
+  @include justify-content-center();
+  @include align-items-center();
+  color: $color-white;
+  background: $color-form-result-success-background;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  > div {
+    position: $relative;
+    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    border: $border1px $border-div-result-background;
+    z-index: 1001;
+    border-radius: 0;
+    color: $color-form-success;
+    background-color: $color-div-result-background;
+  }
+  a {
+    color: $color-form-success;
+    background-color: $transparent;
+    font-weight: $font-weight-700;
+  }
+}
+
+/*-----Стили для сообщения об успешной отправке(START)-----*/

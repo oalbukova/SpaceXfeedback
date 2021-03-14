@@ -1,0 +1,7 @@
+.footer__container {
+  max-width: $calc-1306px;
+  @include flex();
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

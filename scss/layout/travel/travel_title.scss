@@ -1,0 +1,17 @@
+.travel__title {
+  @include color-title();
+  font-weight: $font-weight-700;
+  text-transform: $uppercase;
+  margin: 0;
+  font-size: 58px;
+  line-height: 58px;
+  @include media-max(sm) {
+    font-size: 40px;
+  }
+}
+
+.travel__title-span {
+  @include color-title();
+  font-weight: $font-weight-400;
+  font-size: 25px;
+}

@@ -1,0 +1,42 @@
+.travel__btn {
+  @include travel__btn-color();
+  @include background();
+  @include transition-transform-linear();
+  color: $color-white;
+  position: $relative;
+  background-position: $center;
+  background-color: $transparent;
+  width: 184px;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 100;
+  &::hover {
+    @include travel__btn-color-hover();
+    @include animation-pulse();
+    @include transform-scale();
+    @include opacity-6();
+  }
+  &:before {
+    @include travel__btn-corner();
+    border-left: $travel-btn-border;
+    border-bottom: $travel-btn-border;
+    bottom: -2px;
+    left: -2px;
+  }
+  &:after {
+    @include travel__btn-corner();
+    border-top: $travel-btn-border;
+    border-right: $travel-btn-border;
+    top: -2px;
+    right: -2px;
+  }
+  &:hover:before {
+    @include travel__btn-hover();
+  }
+  &:hover:after {
+    @include travel__btn-hover();
+  }
+  @include media-max(lg) {
+    margin: 0 $auto;
+  }
+}

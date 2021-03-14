@@ -1,0 +1,55 @@
+/*-----Стили секции, в которой выводится капча(START)-----*/
+.form-captcha {
+  @include flex();
+  @include align-items-center();
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  @include media-max(xs) {
+    @include flex-wrap-wrap();
+  }
+}
+
+.form-captcha__image {
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
+.form-captcha__refresh {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+  border: $border1px #ced4da;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: $pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.form-captcha__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: $relative;
+  margin-bottom: 0;
+}
+
+.form-captcha__input {
+  min-width: 200px;
+  margin-top: 0.5rem;/*
+  .invalid-feedback & {
+    position: $absolute;
+    bottom: -24px;
+    bottom: -1.5rem;
+  }*/
+}
+
+.form-captcha__input .invalid-feedback {
+  position: $absolute;
+  bottom: -24px;
+  bottom: -1.5rem;
+}
+/*-----Стили секции, в которой выводится капча(END)-----*/

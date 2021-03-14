@@ -1,0 +1,31 @@
+@mixin transition-transform-linear() {
+  -webkit-transition: -webkit-transform linear 0.5s;
+  transition: -webkit-transform linear 0.5s;
+  transition: transform linear 0.5s;
+  transition: transform linear 0.5s, -webkit-transform linear 0.5s;
+}
+
+@mixin animation-pulse() {
+  animation: pulse 10s ease-in-out infinite alternate-reverse;
+  -webkit-transform: scale(1.1);
+}
+
+@mixin transform-scale() {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@mixin transform-rotate() {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+@mixin transform-origin-b-r() {
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+@mixin transform-translateY() {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -1,0 +1,25 @@
+@mixin text-rendering() {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin background() {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin travel__btn-corner() {
+  height: 5px;
+  width: 5px;
+  position: $absolute;
+  content: " ";
+}
+
+@mixin travel__btn-hover() {
+  width: 10px;
+  height: 10px;
+}
